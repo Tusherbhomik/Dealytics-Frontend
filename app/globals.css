@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #4f46e5;
+  --background-dark: #0a1c40;
+  --background-light: #1a2b4b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--background-dark);
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1a2d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3f5f;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a517a;
+}
+
+/* Improved button styles */
+button {
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Custom toggle switch styling */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #374151;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #3b82f6;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(16px);
+}
+
+/* Card hover effects */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
