@@ -47,7 +47,7 @@ const Sidebar = () => {
             <FileText size={18} />
             <span>My Reviews</span>
           </Link>
-          <Link href="/subscription" className="flex items-center gap-2 text-white/80 hover:text-white p-2 rounded hover:bg-white/10 transition-colors text-sm">
+          <Link href="/subscriptions" className="flex items-center gap-2 text-white/80 hover:text-white p-2 rounded hover:bg-white/10 transition-colors text-sm">
             <CreditCard size={18} />
             <span>Subscription</span>
           </Link>
